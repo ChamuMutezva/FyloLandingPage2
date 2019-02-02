@@ -1,4 +1,5 @@
 # Frontend Mentor - Fylo landing page with dark theme and features grid
+live preview link https://chamumutezva.github.io/FyloLandingPage2/
 
 ![Design preview for the Fylo landing page with dark theme and features grid challenge](./design/desktop-preview.jpg)
 
@@ -47,5 +48,6 @@ If you decide to push the project live, tweet [@frontendmentor](https://twitter.
 Feedback is always welcome, so if you have any on this challenge please email me at matt[at]frontendmentor[dot]io.
 
 This challenge is completely free. Please share it with anyone who will find it useful to practice on.
+https://chamumutezva.github.io/FyloLandingPage2/
 
 **Have fun building!** 🚀

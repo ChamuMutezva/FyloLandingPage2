@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -42,13 +42,13 @@
     <div id="hero">
       <img src="images/illustration-intro.png">
       <div id="secureLoc">
-          <h1> All your files in one secure location, accessible anywhere.</h1>
-          <p>
-            Fylo stores all your most important files in one secure location. Access them wherever
-            you need, share and collaborate with friends family, and co-workers.
-          </p>
-          <button id="getStarted"> Get Started </button>
-      </div>     
+        <h1> All your files in one secure location, accessible anywhere.</h1>
+        <p>
+          Fylo stores all your most important files in one secure location. Access them wherever
+          you need, share and collaborate with friends family, and co-workers.
+        </p>
+        <button class="getStarted"> Get Started </button>
+      </div>
 
     </div>
 
@@ -153,43 +153,52 @@
       </div>
     </div>
 
+    <div id="signUpSection">
+      <div id="getEarlyAccess">
+        <h3> Get early access today</h3>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+          questions, our support team would be happy to help you.
+        </p>
+        <div id="registration">
+          <input type=text>
+          <button class="getStarted">Get Started For Free</button>
+        </div>
+      </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Get early access today
-
-    It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-    questions, our support team would be happy to help you.
-
-    Get Started For Free
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-    dolore magna aliqua
   </main>
   <footer>
-    +1-543-123-4567
-    example@fylo.com
 
-    About Us
-    Jobs
-    Press
-    Blog
+    <div id="logoSection">
+      <img src="images/logo.svg">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua
+      </p>
+    </div>
 
-    Contact Us
-    Terms
-    Privacy
+    <div id="telephone">
+      +1-543-123-4567
+      example@fylo.com
+    </div>
 
+    <div id="aboutUs">
+      <a href="">About Us</a>
+      <a href=""> Jobs</a>
+      <a href="">Press</a>
+      <a href=""> Blog</a>
+
+      <a href="">Contact Us</a>
+      <a href="">Terms</a>
+      <a href=""> Privacy</a>
+    </div>
+
+    <div id="socials">
+      <a href="" class="fa fa-facebook-f" rel="noopener"></a>
+      <a href="" class="fa fa-instagram" rel="noopener"></a>
+      <a href="" class="fa fa-twitter" rel="noopener"></a>
+    </div>
 
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

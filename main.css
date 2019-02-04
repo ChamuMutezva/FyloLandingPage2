@@ -6,8 +6,14 @@ body {
     color: white;
 }
 
+div#wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 header {
     height: 100px;
+    width: 100%;
 }
 
 main {
@@ -176,11 +182,28 @@ footer a {
     text-decoration: none;
     color: white;
 }
+
 #registration button.getStarted {
     width: 400px;
 }
+
 input[type="text"] {
     width: 300px;
     height: 50px;
     border-radius: 25px;
+}
+
+@media only screen and (max-width: 850px) {
+    nav {
+        margin-left: -2%;
+        font-size: medium;
+    }
+
+    header {
+        margin-left: -2%;
+    }
+
+    nav img {
+        transform: scale(0.6);
+    }
 }

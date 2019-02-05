@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     width: 100%;
     background-color: hsl(217, 28%, 15%);
@@ -206,4 +211,108 @@ input[type="text"] {
     nav img {
         transform: scale(0.6);
     }
+
+    div#navigate {
+        margin-right: 2%;
+        line-height: 3;
+    }
+
+    div#hero {
+        background-image: url(images/bg-curvy-mobile.svg);
+        background-position: center;
+    }
+
+    div#hero img {
+        width: 80%;
+    }
+
+    div#secureLoc {
+        width: 100%;
+    }
+
+    #hero h1 {
+        font-size: larger;
+        margin-bottom: 5%;
+    }
+
+    #secureLoc p {
+        background-color: hsl(218, 28%, 13%);
+        font-size: large;
+        padding: 5%;
+    }
+
+    button.getStarted {
+        width: 60%;
+        height: 40px;
+    }
+
+    div#filesSection {
+        grid-template-columns: 1fr;
+        font-size: medium;
+        grid-row-gap: 5%;
+    }
+
+    div#filesSection img {
+        margin-bottom: 5%;
+    }
+
+    div#filesSection p {
+        margin-bottom: 5%;
+    }
+
+    div#productive {
+        grid-template-columns: 1fr;
+        padding-top: 55%;
+    }
+
+    div#stayProductive {
+        width: 100%;
+        text-align: start;
+        font-size: medium;
+    }
+
+    div#stayProductive p,
+    div#stayProductive h2,
+    div#stayProductive a {
+        margin: 5%;
+    }
+
+    div#commentSection {
+        grid-template-columns: 1fr;
+        grid-row-gap: 5%;
+    }
+
+    div#commentary img {
+        transform: scale(0.4);
+    }
+
+    div#getEarlyAccess {
+        width: 100%;
+        font-size: small;
+    }
+
+    div#getEarlyAccess p {
+        margin-left: 5%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%; 
+    }
+
+    input[type="text"] {
+        width: 70%;
+        height: 35px;
+        margin-bottom: 5%;
+       
+    }
+
+    #registration button.getStarted {
+        width: 70%;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-row-gap: 10vw;
+        font-size: small;
+    }
+
 }

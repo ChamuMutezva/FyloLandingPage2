@@ -198,6 +198,18 @@ input[type="text"] {
     border-radius: 25px;
 }
 
+div#hereAboutUs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10%;
+}
+
+div#contactUs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10%;
+}
+
 @media only screen and (max-width: 850px) {
     nav {
         margin-left: -2%;
@@ -295,14 +307,14 @@ input[type="text"] {
         margin-left: 5%;
         margin-right: 10%;
         margin-top: 5%;
-        margin-bottom: 5%; 
+        margin-bottom: 5%;
     }
 
     input[type="text"] {
         width: 70%;
         height: 35px;
         margin-bottom: 5%;
-       
+
     }
 
     #registration button.getStarted {
@@ -313,6 +325,24 @@ input[type="text"] {
         grid-template-columns: 1fr;
         grid-row-gap: 10vw;
         font-size: small;
+    }
+
+    div#aboutUs {
+        grid-template-columns: 1fr;
+        grid-row-gap: 40%;
+    }
+
+    .fa {
+        font-size: small;
+        width: 15px;
+    }
+
+    div#logoSection p img {
+        width: 5%;
+    }
+
+    div#logoSection img {
+        width: 30%;
     }
 
 }

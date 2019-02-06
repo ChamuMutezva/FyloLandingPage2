@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
@@ -31,9 +32,9 @@
       <nav>
         <img src="images/logo.svg">
         <div id="navigate">
-          <span id="">Features</span>
-          <span id="">Team</span>
-          <span id="">Sign In</span>
+          <a href="" id="features">Features</a>
+          <a href="" id="team">Team</a>
+          <a href="" id="signIn">Sign In</a>
         </div>
       </nav>
 
@@ -48,7 +49,9 @@
             Fylo stores all your most important files in one secure location. Access them wherever
             you need, share and collaborate with friends family, and co-workers.
           </p>
-          <button class="getStarted"> Get Started </button>
+          <div id="callToStart">
+            <button class="getStarted"> Get Started </button>
+          </div>
         </div>
 
       </div>
@@ -114,29 +117,34 @@
       </div>
 
       <div id="commentary">
-        <img src="images/bg-quotes.png">
+        <img src="images/bg-quotes.png" id="quotes">
         <div id="commentSection">
           <div id="firstComment" class="comments">
             <p class="details">
               Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
               become a well-oiled collaboration machine.
             </p>
-            <div class="profile">
+            <figure class="profile">
               <img src="images/profile-1.jpg">
-              Satish Patel
-              Founder & CEO, Huddle
-            </div>
+              <figcaption>
+                Satish Patel<br>
+                Founder & CEO, Huddle
+              </figcaption>
+
+            </figure>
           </div>
           <div id="secondComment" class="comments">
             <p class="details">
               Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
               become a well-oiled collaboration machine.
             </p>
-            <div class="profile">
+            <figure class="profile">
               <img src="images/profile-2.jpg">
-              Bruce McKenzie
-              Founder & CEO, Huddle
-            </div>
+              <figcaption>
+                Bruce McKenzie <br>
+                Founder & CEO, Huddle
+              </figcaption>
+            </figure>
           </div>
 
           <div id="thirdComment" class="comments">
@@ -144,11 +152,13 @@
               Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
               become a well-oiled collaboration machine.
             </p>
-            <div class="profile">
+            <figure class="profile">
               <img src="images/profile-3.jpg">
-              Iva Boyd
-              Founder & CEO, Huddle
-            </div>
+              <figcaption>
+                Iva Boyd<br>
+                Founder & CEO, Huddle
+              </figcaption>
+            </figure>
           </div>
 
         </div>
@@ -162,7 +172,7 @@
             questions, our support team would be happy to help you.
           </p>
           <div id="registration">
-            <input type=text>
+            <input type=email placeholder="email.example.com">
             <button class="getStarted">Get Started For Free</button>
           </div>
         </div>
@@ -172,7 +182,7 @@
     <footer>
 
       <div id="logoSection">
-        <img src="images/logo.svg">
+        <img src="images/logo.svg" id="footerLogo">
         <p>
           <img src="images/icon-location.svg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -195,16 +205,16 @@
 
       <div id="aboutUs">
         <div id="hereAboutUs">
-            <a href="">About Us</a>
-            <a href=""> Jobs</a>
-            <a href="">Press</a>
-            <a href=""> Blog</a>
+          <a href="">About Us</a>
+          <a href=""> Jobs</a>
+          <a href="">Press</a>
+          <a href=""> Blog</a>
         </div>
         <div id="contactUs">
-            <a href="">Contact Us</a>
-            <a href="">Terms</a>
-            <a href=""> Privacy</a>
-        </div>           
+          <a href="">Contact Us</a>
+          <a href="">Terms</a>
+          <a href=""> Privacy</a>
+        </div>
       </div>
 
       <div id="socials">

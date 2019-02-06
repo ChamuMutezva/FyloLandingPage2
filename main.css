@@ -3,11 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-img#quotes {
-   filter: invert(10%) sepia(150%) saturate(300%) hue-rotate(83deg) brightness(102%) contrast(102%);
-   width: 8%;
-}
-
 
 body {
     width: 100%;
@@ -22,11 +17,21 @@ div#wrapper {
     overflow-x: hidden;
 }
 
+img#quotes {
+    filter: invert(10%) sepia(150%) saturate(300%) hue-rotate(83deg) brightness(102%) contrast(102%);
+    width: 8%;
+ }
+
 h1,
 h2,
 h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+}
+
+p {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 header {
@@ -97,6 +102,7 @@ div#filesSection {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     text-align: center;
+    grid-row-gap: 10%;
 }
 
 div.files {
@@ -115,7 +121,7 @@ div#productive {
     grid-template-columns: 1fr 1fr;
     background-color: hsl(218, 28%, 13%);
     color: white;
-    padding-top: 5%;
+    padding-top: 15%;
     align-items: center;
     justify-items: center;
 }

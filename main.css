@@ -163,7 +163,7 @@ div#commentSection {
     background-color: hsl(217, 28%, 15%);
     color: white;
     padding: 5%;
-    font-size: small;
+    font-size: medium;
 }
 
 .profile {
@@ -193,13 +193,12 @@ div#signUpSection {
     background-color: hsl(218, 28%, 13%);
 }
 
-div#getEarlyAccess {}
-
 footer {
     padding: 10% 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: hsl(216, 53%, 9%);
+    grid-column-gap: 5%;
 }
 
 .fa {
@@ -217,11 +216,17 @@ footer {
 div#aboutUs {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-self: end;
     /* text-decoration: none; */
 }
 
 #stayProductive a {
     color: hsl(176, 68%, 64%)
+}
+
+div#socials {
+    align-self: end;
+    margin-bottom: 5%;
 }
 
 footer a {
@@ -255,6 +260,14 @@ h2 {
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+div#telephone {
+    align-self: end;
+    display: grid;
+    grid-row-gap: 25%;
+    margin-bottom: 20%;
+}
+
 
 @media only screen and (max-width: 850px) {
     nav {
@@ -352,7 +365,7 @@ h2 {
 
 
     div#stayProductive h2 {
-        font-size: medium;
+        font-size: larger;
         font-weight: 700;
     }
 
@@ -382,6 +395,7 @@ h2 {
     }
 
     input[type="email"] {
+        padding-left: 5%;
        /* width: 70%;*/
         height: 40px;
         margin-bottom: 5%;

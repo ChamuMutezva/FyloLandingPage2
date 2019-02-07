@@ -19,7 +19,7 @@ div#wrapper {
 
 img#quotes {
     filter: invert(10%) sepia(150%) saturate(300%) hue-rotate(83deg) brightness(102%) contrast(102%);
-    width: 8%;
+    width: 3%;
  }
 
 h1,
@@ -30,6 +30,7 @@ h3 {
 }
 
 p {
+    
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -84,6 +85,8 @@ div#secureLoc {
 }
 
 button.getStarted {
+    color: white;
+    font-size: large;
     width: 30%;
     height: 60px;
     border-radius: 30px;
@@ -127,6 +130,7 @@ div#productive {
 }
 
 #navigate a {
+    margin-left: 5%;
     text-decoration: none;
     color: white;
 }

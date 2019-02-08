@@ -20,7 +20,7 @@ div#wrapper {
 img#quotes {
     filter: invert(10%) sepia(150%) saturate(300%) hue-rotate(83deg) brightness(102%) contrast(102%);
     width: 3%;
- }
+}
 
 h1,
 h2,
@@ -30,7 +30,7 @@ h3 {
 }
 
 p {
-    
+
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -90,7 +90,7 @@ button.getStarted {
     width: 30%;
     height: 60px;
     border-radius: 30px;
-    background-color: hsl(176, 68%, 64%)
+    background-color: hsl(176, 68%, 64%);
 }
 
 div#callToStart {
@@ -118,6 +118,9 @@ div#security {
     margin-top: 30%;
 }
 
+div#getEarlyAccess h2 {
+    font-weight: 900;
+}
 
 div#productive {
     display: grid;
@@ -163,7 +166,7 @@ div#commentSection {
     background-color: hsl(217, 28%, 15%);
     color: white;
     padding: 5%;
-    font-size: medium;
+    font-size: small;
 }
 
 .profile {
@@ -207,10 +210,14 @@ footer {
     text-align: center;
     border-radius: 5px;
     padding: 2px;
-    font-size: xx-large;
+    font-size: large;
     text-decoration: none;
-    background-color: white;
-    color: hsl(192, 100%, 9%);
+    /*background-color: white;*/
+    color: white;
+    /*hsl(192, 100%, 9%);*/
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 3% 6% 3% 4%;
 }
 
 div#aboutUs {
@@ -242,6 +249,8 @@ input[type="email"] {
     width: 300px;
     height: 50px;
     border-radius: 25px;
+    margin: 3% auto;
+    display: block;
 }
 
 div#hereAboutUs {
@@ -269,7 +278,7 @@ div#telephone {
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 720px) {
     nav {
         margin-left: -2%;
         font-size: medium;
@@ -312,8 +321,11 @@ div#telephone {
     }
 
     #hero h1 {
-        font-size: larger;
+        font-size: x-large;
         margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-weight: 900;
     }
 
     #secureLoc p {
@@ -375,6 +387,7 @@ div#telephone {
     }
 
     div#commentary img {
+        margin-left: 5%;
         /*transform: scale(0.4);*/
     }
 
@@ -396,7 +409,7 @@ div#telephone {
 
     input[type="email"] {
         padding-left: 5%;
-       /* width: 70%;*/
+        /* width: 70%;*/
         height: 40px;
         margin-bottom: 5%;
         display: block;
@@ -429,9 +442,7 @@ div#telephone {
         width: 5%;
     }
 
-    div#logoSection img {
-        
-    }
+    div#logoSection img {}
 
     div#logoSection {
         margin-top: 40%;
@@ -445,4 +456,34 @@ div#telephone {
         margin-bottom: 5%;
     }
 
+    div#socials {
+        text-align: center;
+    }
+
+    .fa {
+        padding: 3% 6% 3% 3%;
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width: 521px) and (max-width: 960px) {
+    button.getStarted {
+        width: 70%;
+        font-size: x-large;
+    }
+
+    div#aboutUs {
+        grid-template-columns: 1fr;
+        align-self: start;
+    }
+
+    div#contactUs {
+        margin-top: 60%;
+    }
+
+    div#socials {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-self: center;
+    }
 }

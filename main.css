@@ -75,6 +75,7 @@ div#navigate {
 
 nav img {
     margin-left: 5%;
+    transform: scale(0.5);
 }
 
 div#secureLoc {
@@ -466,24 +467,63 @@ div#telephone {
     }
 }
 
-@media only screen and (min-width: 521px) and (max-width: 960px) {
+@media only screen and (min-width: 721px) and (max-width: 960px) {
     button.getStarted {
         width: 70%;
+        font-size: medium;
+        height: 50px;
+    }
+
+    div#secureLoc h1 {
         font-size: x-large;
+    }
+    footer {        
+        grid-template-columns: 1fr 1fr 1fr;
+       
+    }
+
+    div#telephone {
+        align-self: start;        
+        grid-row-gap: 25%;
+        margin-top: 25%;
+            }
+
+    div#secureLoc p {
+        font-size: medium;
+    }
+
+    div#hero img {
+        transform: scale(0.8);
     }
 
     div#aboutUs {
-        grid-template-columns: 1fr;
+        font-size: medium;
+        margin-top: 25%;
         align-self: start;
     }
 
     div#contactUs {
-        margin-top: 60%;
+       /* margin-top: 60%;*/
     }
 
-    div#socials {
+   /* div#socials {
         display: grid;
         grid-template-columns: 1fr;
         align-self: center;
+    }*/
+
+    div#filesSection h2, div#stayProductive h2, #stayProductive a, div#getEarlyAccess h2 {
+        font-size: large;
+        font-weight: 900;
     }
+
+    div#filesSection p, div#stayProductive p, div#getEarlyAccess p, div#logoSection p, div#telephone span {
+        font-size: medium;
+        font-weight: 400;
+    }
+
+    div#logoSection img, div#telephone img{
+        transform: scale(0.6);
+    }
+
 }

@@ -423,14 +423,14 @@ div#registration {
     input[type="email"] {
         padding-left: 5%;
         width: 70vw;
-        height: 70px;
+        height: 50px;
         margin-bottom: 5%;
         display: block;
     }
 
     #registration button.getStarted {
         width: 100%;
-        height: 70px;
+        height: 50px;
     }
 
     footer {
@@ -444,7 +444,11 @@ div#registration {
 
     div#aboutUs {
         grid-template-columns: 1fr;
-        grid-row-gap: 40%;
+        grid-row-gap: 70%;
+    }
+
+    div#hereAboutUs, div#contactUs {
+                grid-row-gap: 20%;
     }
 
     .fa {

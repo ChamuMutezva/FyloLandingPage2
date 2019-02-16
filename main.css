@@ -221,6 +221,11 @@ footer {
     padding: 3% 6% 3% 4%;
 }
 
+.fa:hover  {
+    transform: rotate(360deg);
+   color: red;
+    transition-duration: 0.5s;
+}
 div#aboutUs {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -1,0 +1,15 @@
+@use '../abstracts';
+
+body {
+    font-family: abstracts.$main-font;
+}
+
+.wrapper {
+    background-color: abstracts.$very-dark-grey;
+    color: abstracts.$white;
+    width: 100%;
+    overflow-x: hidden;   
+}
+.header {
+    padding: 2rem 1.25rem;
+}

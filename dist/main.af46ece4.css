@@ -12,9 +12,47 @@ body {
     color: white;
 }
 
-div#wrapper {
+li {
+	list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.wrapper {
     width: 100%;
     overflow-x: hidden;
+}
+
+.header {   
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 1.5rem 1.25rem;
+}
+.navigate {
+	display: flex;
+	flex: 1 1 60%;
+	justify-content: space-between;
+}
+
+.logo__wrapper {
+	flex: 1 1 40%;
+}
+
+.nav__link--btn {
+	text-decoration: none;
+	color: white;
+}
+
+.logo {
+	max-width: 11rem;
 }
 
 img#quotes {
@@ -35,11 +73,7 @@ p {
     margin-bottom: 5%;
 }
 
-header {
-    height: 100px;
-    width: 100%;
-    font-family: 'Raleway', sans-serif;
-}
+
 
 main {
     width: 100%;
@@ -47,16 +81,12 @@ main {
 
 }
 
-nav {
-    margin-top: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 
 div#hero {
     width: 100%;
     height: 100%;
-    background-image: url("images/bg-curvy-desktop.svg");
+    background-image: url("/bg-curvy-desktop.b3534639.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -73,10 +103,7 @@ div#navigate {
     margin-right: 10%;
 }
 
-nav img {
-    margin-left: 5%;
-    transform: scale(0.5);
-}
+
 
 div#secureLoc {
     width: 70%;
@@ -333,7 +360,7 @@ div#telNum span {
     }
 
     div#hero {
-        background-image: url(images/bg-curvy-mobile.svg);
+        background-image: url(/bg-curvy-mobile.3eef75f6.svg);
         background-position: center;
     }
 
@@ -565,3 +592,5 @@ div#telNum span {
     }
 
 }
+
+/*# sourceMappingURL=/main.af46ece4.css.map */

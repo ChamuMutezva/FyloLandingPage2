@@ -1,0 +1,590 @@
+
+
+body {
+    width: 100%;
+    background-color: hsl(217, 28%, 15%);
+    font-family: "Open sans", sans-serif;
+    font-size: x-large;
+    color: white;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header {   
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 1.5rem 1.25rem;
+}
+.navigate {
+	display: flex;
+	flex: 1 1 60%;
+	justify-content: space-between;
+}
+
+.logo__wrapper {
+	flex: 1 1 40%;
+}
+
+.nav__link--btn {
+	text-decoration: none;
+	color: white;
+}
+
+.logo {
+	max-width: 11rem;
+}
+
+img#quotes {
+    filter: invert(10%) sepia(150%) saturate(300%) hue-rotate(83deg) brightness(102%) contrast(102%);
+    width: 3%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+p {
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+main {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+div#hero {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+div#hero img {
+    display: block;
+    margin: auto;
+}
+
+div#navigate {
+    text-align: end;
+    color: white;
+    margin-right: 10%;
+}
+
+
+
+div#secureLoc {
+    width: 70%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+button.getStarted {
+    color: white;
+    font-size: large;
+    width: 30%;
+    height: 60px;
+    border-radius: 30px;
+    background-color: hsl(176, 68%, 64%);
+}
+
+div#callToStart {
+    background-color: hsl(218, 28%, 13%);
+}
+
+div#filesSection {
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    /*margin-top: 10%;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    grid-row-gap: 10%;
+}
+
+div.files {
+    width: 90%;
+    margin: auto;
+}
+
+div#filesAccess,
+div#security {
+    margin-top: 30%;
+}
+
+div#getEarlyAccess h2 {
+    font-weight: 900;
+}
+
+div#productive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    padding-top: 15%;
+    align-items: center;
+    justify-items: center;
+}
+
+#navigate a {
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+}
+
+div#stayProductive {
+    width: 70%;
+    text-align: start;
+}
+
+#productive img {
+    width: 80%;
+}
+
+div#commentary {
+    background-color: hsl(218, 28%, 13%);
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+
+div#commentSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    width: 90%;
+    margin: 0 auto;
+    font-size: medium;
+}
+
+.comments {
+    background-color: hsl(217, 28%, 15%);
+    color: white;
+    padding: 5%;
+    font-size: medium;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: end;
+}
+
+.profile img {
+    margin-top: 10%;
+    border-radius: 50%;
+    width: 40%;
+}
+
+div#getEarlyAccess {
+    margin: 5% auto;
+    width: 80%;
+    background-color: hsl(217, 28%, 15%);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+div#signUpSection {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: hsl(218, 28%, 13%);
+}
+
+footer {
+    padding: 10% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: hsl(216, 53%, 9%);
+    grid-column-gap: 5%;
+}
+
+.fa {
+    width: 40px;
+    margin: 20% 2%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: large;
+    text-decoration: none;
+    /*background-color: white;*/
+    color: white;
+    /*hsl(192, 100%, 9%);*/
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 3% 6% 3% 4%;
+}
+
+.fa:hover  {
+    transform: rotate(360deg);
+   color: red;
+    transition-duration: 0.5s;
+}
+div#aboutUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: end;
+    /* text-decoration: none; */
+}
+
+#stayProductive a {
+    color: hsl(176, 68%, 64%)
+}
+
+div#socials {
+    align-self: end;
+    margin-bottom: 5%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#registration button.getStarted {
+    width: 30vw;
+    margin-top: 6%;
+}
+
+input[type="email"] {
+    width: 80%;
+    height: 60px;
+    border-radius: 25px;
+    margin: 3% auto;
+    display: block;
+}
+
+div#hereAboutUs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10%;
+}
+
+div#contactUs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10%;
+}
+
+h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+div#telephone {
+    align-self: end;
+    display: grid;
+    grid-row-gap: 25%;
+    margin-bottom: 20%;
+}
+
+div#registration {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+div#logoSection p span, div#mail span {
+    margin-left: 5%;
+}
+
+div#telNum span {
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 720px) {
+
+    div#registration {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+/*
+    nav {
+        margin-left: -2%;
+        font-size: medium;
+        grid-template-columns: 130px 1fr;
+    }*/
+
+    div#security {
+        margin-top: 0%;
+    }
+/*
+    header {
+        margin-left: -2%;
+    }
+*/
+    nav img {
+        transform: scale(0.4);
+        margin-left: -10%;
+    }
+
+    div#navigate {
+        text-align: right;
+        line-height: 3;
+    }
+
+    span {
+        margin-right: 5%;
+    }
+
+    div#hero {
+        background-image: url(images/bg-curvy-mobile.svg);
+        background-position: center;
+    }
+
+    div#hero img {
+        width: 80%;
+    }
+
+    div#secureLoc {
+        width: 100%;
+    }
+
+    #hero h1 {
+        font-size: x-large;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-weight: 900;
+    }
+
+    #secureLoc p {
+        background-color: hsl(218, 28%, 13%);
+        font-size: large;
+        padding: 10% 5%;
+    }
+
+    button.getStarted {
+        width: 60%;
+        height: 40px;
+    }
+
+    div#filesSection {
+        grid-template-columns: 1fr;
+        font-size: medium;
+        grid-row-gap: 5%;
+    }
+
+    div#filesSection img {
+        margin-bottom: 5%;
+    }
+
+    div#filesSection p {
+        margin-bottom: 5%;
+    }
+
+    div#productive {
+        grid-template-columns: 1fr;
+        padding-top: 55%;
+    }
+
+    div#stayProductive {
+        width: 100%;
+        text-align: start;
+        font-size: medium;
+    }
+
+    div#stayProductive p,
+    div#stayProductive h2,
+    div#stayProductive a {
+        margin: 5%;
+    }
+
+    div#stayProductive p,
+    div#stayProductive a {
+        font-size: small;
+    }
+
+
+    div#stayProductive h2 {
+        font-size: larger;
+        font-weight: 700;
+    }
+
+    div#commentSection {
+        grid-template-columns: 1fr;
+        grid-row-gap: 5%;
+    }
+
+    div#commentary img {
+        margin-left: 5%;
+        /*transform: scale(0.4);*/
+    }
+
+    div#getEarlyAccess {
+        width: 90%;
+        padding-top: 5%;
+        padding-bottom: 40%;
+        font-size: small;
+        position: relative;
+
+    }
+
+    div#getEarlyAccess p {
+        margin-left: 5%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    input[type="email"] {
+        padding-left: 5%;
+        width: 70vw;
+        height: 50px;
+        margin-bottom: 5%;
+        display: block;
+    }
+
+    #registration button.getStarted {
+        width: 100%;
+        height: 50px;
+    }
+
+    footer {
+        margin-top: -40%;
+        z-index: -1;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10vw;
+        font-size: small;
+
+    }
+
+    div#aboutUs {
+        grid-template-columns: 1fr;
+        grid-row-gap: 70%;
+    }
+
+    div#hereAboutUs, div#contactUs {
+                grid-row-gap: 20%;
+    }
+
+    .fa {
+        font-size: small;
+        width: 15px;
+    }
+
+    div#logoSection p img {
+        width: 5%;
+    }
+
+    div#logoSection img {}
+
+    div#logoSection {
+        margin-top: 40%;
+    }
+
+    img#footerLogo {
+        margin-bottom: 10%;
+    }
+
+    div#telNum {
+        margin-bottom: 5%;
+    }
+
+    div#socials {
+        text-align: center;
+    }
+
+    .fa {
+        padding: 3% 6% 3% 3%;
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 960px) {
+    button.getStarted {
+        width: 70%;
+        font-size: medium;
+        height: 50px;
+    }
+
+    div#secureLoc h1 {
+        font-size: x-large;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    div#telephone {
+        align-self: start;
+        grid-row-gap: 25%;
+        margin-top: 25%;
+    }
+
+    div#secureLoc p {
+        font-size: medium;
+    }
+
+    div#hero img {
+        transform: scale(0.8);
+    }
+
+    div#aboutUs {
+        font-size: medium;
+        margin-top: 25%;
+        align-self: start;
+    }
+
+    div#contactUs {
+        /* margin-top: 60%;*/
+    }
+
+    /* div#socials {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-self: center;
+    }*/
+
+    div#filesSection h2,
+    div#stayProductive h2,
+    #stayProductive a,
+    div#getEarlyAccess h2 {
+        font-size: large;
+        font-weight: 900;
+    }
+
+    div#filesSection p,
+    div#stayProductive p,
+    div#getEarlyAccess p,
+    div#logoSection p,
+    div#telephone span {
+        font-size: medium;
+        font-weight: 400;
+    }
+
+    div#logoSection img,
+    div#telephone img {
+        transform: scale(0.6);
+    }
+
+}

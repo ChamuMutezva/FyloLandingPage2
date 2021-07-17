@@ -1,0 +1,27 @@
+{
+  "name": "FyloLandingPage2",
+  "version": "1.0.0",
+  "description": "live preview link https://chamumutezva.github.io/FyloLandingPage2/",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "npm run parcel && npm run sass",
+    "sass": "sass src/scss/main.scss:src/css/main.css",
+    "parcel": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChamuMutezva/FyloLandingPage2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChamuMutezva/FyloLandingPage2/issues"
+  },
+  "homepage": "https://github.com/ChamuMutezva/FyloLandingPage2#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.35.2"
+  }
+}

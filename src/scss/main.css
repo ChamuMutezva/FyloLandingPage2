@@ -121,4 +121,13 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-size: 0.75rem;
+}
+
+.hero {
+  padding: 0.5rem 2.25rem;
+  margin: auto;
+  background-image: url("./images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
 }/*# sourceMappingURL=main.css.map */

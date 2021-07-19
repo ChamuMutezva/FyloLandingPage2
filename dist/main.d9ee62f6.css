@@ -94,6 +94,7 @@ body {
 
 .header {
   padding: 2rem 1.25rem;
+  background-color: #1B2330;
 }
 
 .nav {
@@ -118,6 +119,99 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-size: 0.75rem;
+}
+
+.hero {
+  margin: auto;
+  background-color: #1B2330;
+}
+
+.hero__img__wrapper {
+  padding: 0.5rem 2.25rem;
+}
+
+.main__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.hero__content {
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.secure__loc {
+  background-image: url("/bg-curvy-desktop.b3534639.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  text-align: center;
+  padding: 0.5rem 2.25rem;
+}
+
+.files__section {
+  background-color: #181f2a;
+  margin: 8rem auto 10.5rem;
+  text-align: center;
+  padding: 0 1.75rem;
+}
+
+.files {
+  margin-bottom: 5rem;
+}
+
+.files__img {
+  margin: auto;
+}
+
+.files__title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+}
+
+.files__content {
+  font-size: 0.875rem;
+}
+
+.cta {
+  margin-top: 3rem;
+}
+
+.cta--btn {
+  background-image: linear-gradient(#65e2d9, #339ecc);
+  font-size: 0.875rem;
+  padding: 1rem 5rem;
+  border-radius: 24px;
+}
+
+.productive {
+  padding: 0 1.75rem;
+}
+
+.productive__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+}
+
+.productive__content {
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.sub__productive {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.productive__btn {
+  color: #65e2d9;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=/main.d9ee62f6.css.map */

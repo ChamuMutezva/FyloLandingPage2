@@ -1,0 +1,26 @@
+@use '../abstracts';
+
+.productive {
+    padding: 0 1.75rem;
+}
+
+.productive__title {
+    font-family: abstracts.$alt-font;
+    font-size: abstracts.calculateRem(18);
+}
+
+.productive__content {
+    font-size: abstracts.calculateRem(14);
+    margin-top: 1rem;
+}
+.sub__productive {
+	margin-top: 2rem;
+	text-align: left;
+}
+.productive__btn {
+    color: abstracts.$lime;
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+    margin-top: 1rem;
+}

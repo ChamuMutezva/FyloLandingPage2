@@ -1,0 +1,27 @@
+@use '../abstracts';
+
+.files__section {
+    background-color: abstracts.$very-dark-grey;
+    margin: 8rem auto 10.5rem;
+    text-align: center;
+    padding: 0 1.75rem;
+}
+
+.files {
+    margin-bottom: 5rem;
+}
+
+.files__img {
+    margin: auto;
+}
+
+.files__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: abstracts.$alt-font;
+    font-size: abstracts.calculateRem(18);
+}
+
+.files__content {
+    font-size: abstracts.calculateRem(14);
+}

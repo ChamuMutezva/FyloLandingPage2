@@ -81,6 +81,19 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.sr__only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -212,6 +225,65 @@ body {
   align-items: center;
   gap: 0.5rem;
   margin-top: 1rem;
+}
+
+.commentary {
+  margin-top: 10rem;
+  position: relative;
+  z-index: 2;
+}
+.commentary::before {
+  position: absolute;
+  content: "";
+  background-image: url("/bg-quotes.2a98a720.png");
+  background-repeat: no-repeat;
+  filter: invert(10%) sepia(150%) saturate(300%) hue-rotate(83deg) brightness(102%) contrast(102%);
+  top: -3rem;
+  left: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+  transform: scale(0.25);
+}
+
+.comments__section {
+  position: relative;
+  z-index: 3;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.comments {
+  background-color: #202A3C;
+  border-radius: 4px;
+  padding: 1.5rem 1.25rem;
+  margin: auto;
+  max-width: 22.5rem;
+}
+
+.details {
+  font-size: 0.625rem;
+}
+
+.profile {
+  display: flex;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+
+.profile__img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.profile__img__title {
+  font-size: 0.625rem;
+}
+
+.profile__img__more {
+  font-size: 0.4375rem;
 }
 
 /*# sourceMappingURL=/main.d9ee62f6.css.map */

@@ -196,8 +196,10 @@ body {
 .cta--btn {
   background-image: linear-gradient(#65e2d9, #339ecc);
   font-size: 0.875rem;
-  padding: 1rem 5rem;
+  padding: 1rem 4rem;
   border-radius: 24px;
+  border: none;
+  color: #ffffff;
 }
 
 .productive {
@@ -284,6 +286,28 @@ body {
 
 .profile__img__more {
   font-size: 0.4375rem;
+}
+
+.get__access {
+  padding: 2.5rem 1.75rem;
+  margin: auto;
+}
+
+.signup__section {
+  margin: 8.5rem 1.25rem;
+  background-color: #1B2330;
+}
+
+.signup__title {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.signup__content {
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.8;
 }
 
 /*# sourceMappingURL=/main.d9ee62f6.css.map */

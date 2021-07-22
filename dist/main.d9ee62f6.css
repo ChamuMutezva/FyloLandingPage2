@@ -200,6 +200,8 @@ body {
   border-radius: 24px;
   border: none;
   color: #ffffff;
+  display: block;
+  margin: auto;
 }
 
 .productive {
@@ -294,8 +296,9 @@ body {
 }
 
 .signup__section {
-  margin: 8.5rem 1.25rem;
+  margin: 7rem 1.25rem;
   background-color: #1B2330;
+  border-radius: 9px;
 }
 
 .signup__title {
@@ -308,6 +311,23 @@ body {
   font-size: 0.875rem;
   text-align: center;
   line-height: 1.8;
+}
+
+.register__email {
+  display: block;
+  margin: auto;
+  font-size: 0.625rem;
+  padding: 1rem 4rem;
+  border-radius: 24px;
+  border: none;
+}
+
+.registration {
+  margin-top: 2rem;
+}
+
+.get__started--btn {
+  margin-top: 1.5rem;
 }
 
 /*# sourceMappingURL=/main.d9ee62f6.css.map */

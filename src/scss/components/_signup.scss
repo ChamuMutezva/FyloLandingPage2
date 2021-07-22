@@ -1,22 +1,37 @@
 @use '../abstracts';
 
 .get__access {
-	padding: 2.5rem 1.75rem;
-	margin: auto;
-   
+  padding: 2.5rem 1.75rem;
+  margin: auto;
 }
 .signup__section {
-	margin: 8.5rem 1.25rem;
-   // padding: 0 1.25rem;
-    background-color: abstracts.$dark-grey;
+  margin: 7rem 1.25rem;
+  // padding: 0 1.25rem;
+  background-color: abstracts.$dark-grey;
+  border-radius: 9px;
 }
 .signup__title {
-    font-size: abstracts.calculateRem(18);
-    line-height: 1.5;
-    text-align: center;
+  font-size: abstracts.calculateRem(18);
+  line-height: 1.5;
+  text-align: center;
 }
 .signup__content {
-    font-size: abstracts.calculateRem(14);
-    text-align: center;
-    line-height: 1.8;
+  font-size: abstracts.calculateRem(14);
+  text-align: center;
+  line-height: 1.8;
+}
+.register__email {
+  display: block;
+  margin: auto;
+  font-size: abstracts.calculateRem(10);
+  padding: 1rem 4rem;
+  border-radius: 24px;
+  border: none;
+}
+
+.registration {
+	margin-top: 2rem;
+}
+.get__started--btn {
+	margin-top: 1.5rem;
 }

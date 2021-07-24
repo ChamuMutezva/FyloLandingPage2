@@ -1,31 +1,62 @@
 @use '../abstracts';
 
 .hero {
-    margin: auto;
-    background-color: abstracts.$dark-grey;
-
+  margin: auto;
+  background-color: abstracts.$dark-grey;
 }
 
 .hero__img__wrapper {
-    padding: .5rem 2.25rem;
+  padding: 0.5rem 2.25rem;
+  max-width: 45rem;
+  margin: auto;
 }
 
 .main__title {
-    font-family: abstracts.$alt-font;
-    font-size: abstracts.calculateRem(24);
-    margin-top: 0.5rem;
+  font-family: abstracts.$alt-font;
+  font-size: abstracts.calculateRem(24);
+  margin-top: 0.5rem;
 }
 
 .hero__content {
-    font-size: abstracts.calculateRem(14);
-    margin-top: 1rem;
+  font-size: abstracts.calculateRem(14);
+  margin-top: 1rem;
 }
 
 .secure__loc {
+  background-image: url("../../images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  text-align: center;
+  padding: 0.5rem 2.25rem;
+}
+.secure__content {
+  max-width: 45rem;
+  margin: auto;
+}
+
+@media screen and(min-width: 680px) {
+  .secure__loc {
     background-image: url("../../images/bg-curvy-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: bottom;
-    text-align: center;
-    padding: .5rem 2.25rem;
+  }
+  .main__title {
+    font-size: abstracts.calculateRem(32);
+  }
+  .hero__content {
+    font-size: abstracts.calculateRem(16);
+    max-width: 36.8rem;
+    margin: 2rem auto;
+  }
+  .secure__content {    
+    margin: 4rem auto;
+  }
+}
+
+@media screen and(min-width: 1080px) {
+    .main__title {
+        font-size: abstracts.calculateRem(40);
+      }
+      .hero__content {
+        font-size: abstracts.calculateRem(20);        
+      }
 }

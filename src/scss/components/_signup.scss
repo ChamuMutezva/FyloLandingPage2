@@ -3,9 +3,10 @@
 .get__access {
   padding: 2.5rem 1.75rem;
   margin: auto;
+  max-width: 53.9375rem;
 }
 .signup__section {
-  margin: 7rem 1.25rem;
+  margin: 7rem 1.25rem 3rem;
   // padding: 0 1.25rem;
   background-color: abstracts.$dark-grey;
   border-radius: 9px;
@@ -30,8 +31,34 @@
 }
 
 .registration {
-	margin-top: 2rem;
+  margin-top: 2rem;
 }
 .get__started--btn {
-	margin-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and(min-width: 680px) {
+  .get__started--btn {
+    margin-top: 0;
+  }
+  .registration {   
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 44rem;
+    margin: auto;
+  }
+  .register__email {
+   flex: 1 1 40%;
+  }
+  .signup__content {
+    max-width: 42rem;
+    margin: auto;
+  }
+}
+
+@media screen and(min-width: 1080px) {
+  .signup__section {
+    margin: 7rem 18rem;
+  }
 }

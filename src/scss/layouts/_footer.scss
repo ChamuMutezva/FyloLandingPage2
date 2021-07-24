@@ -1,0 +1,75 @@
+@use '../abstracts';
+
+.footer {
+  padding: 2rem 1.75rem;
+}
+.address1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__logo {
+  width: 58%;
+  padding-left: 0.5rem;
+}
+.location__content {
+  display: flex;
+  align-items: first baseline;
+  gap: 1rem;
+}
+.location {
+  flex: 1 1 25%;
+}
+.location__details {
+  font-size: 1rem;
+}
+.telephone__num,
+.mail {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.address2 {
+  margin-top: 1rem;
+}
+.about__contact {
+  margin-top: 3rem;
+
+  .footer__link--btn {
+    font-size: 1rem;
+  }
+  
+}
+
+
+.about,
+.contact {
+  margin-bottom: 2.5rem;
+  li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.socials__link {
+	width: 28px;
+	height: 28px;
+	display: flex;
+	border: 1px solid white;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.fa {
+	color: abstracts.$white;
+	text-decoration: none;
+}
+
+.socials {
+	display: flex;
+	max-width: 10rem;
+	margin: 3.5rem auto;
+	justify-content: space-evenly;
+	align-items: center;
+}

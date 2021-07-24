@@ -1,27 +1,42 @@
 @use '../abstracts';
 
 .files__section {
-    background-color: abstracts.$very-dark-grey;
-    margin: 8rem auto 10.5rem;
-    text-align: center;
-    padding: 0 1.75rem;
+  background-color: abstracts.$very-dark-grey;
+  margin: 8rem auto 10.5rem;
+  text-align: center;
+  padding: 0 1.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  max-width: 55rem;
+  column-gap: 5rem;
 }
 
 .files {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .files__img {
-    margin: auto;
+  margin: auto;
 }
 
 .files__title {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-family: abstracts.$alt-font;
-    font-size: abstracts.calculateRem(18);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: abstracts.$alt-font;
+  font-size: abstracts.calculateRem(18);
 }
 
 .files__content {
-    font-size: abstracts.calculateRem(14);
+  font-size: abstracts.calculateRem(14);
+  max-width: 365px;
+  margin: auto;
+}
+
+@media screen and(min-width: 680px) {
+  .files__title {
+    font-size: abstracts.calculateRem(20);
+  }
+  .files__section {   
+    margin: 6rem auto 3rem;   
+  }
 }

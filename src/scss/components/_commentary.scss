@@ -4,22 +4,7 @@
   margin: 10rem auto 0;
   position: relative;
   z-index: 2;
-  max-width: 73.75rem;
-  /*
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: url("../../images/bg-quotes.png");
-    background-repeat: no-repeat;
-    filter: invert(10%) sepia(150%) saturate(300%) hue-rotate(83deg)
-      brightness(102%) contrast(102%);
-    top: -3rem;
-    left: 1.5rem;
-    width: 5rem;
-    height: 5rem;
-    transform: scale(0.25);   
-  }
-  */
+  max-width: 73.75rem; 
 }
 
 .comments__section {
@@ -103,7 +88,12 @@
 }
 
 @media screen and(min-width: 1080px) {
+  .commentary {
+    margin: 8rem auto 0;   
+  }
+  
   .comments {
+    padding: 1.8rem 2rem;
     &:first-child {
       &::before {
         transform: scale(0.45);

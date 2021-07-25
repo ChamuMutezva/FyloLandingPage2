@@ -103,6 +103,7 @@ body {
   color: #ffffff;
   width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 .header {
@@ -122,10 +123,12 @@ body {
 }
 .footer {
   background-color: #0b1524;
+  position: relative;
+  z-index: 1;
 }
 
 .footer__content__wrapper {
-  padding: 2rem 1.75rem;
+  padding: 16rem 1.75rem 2rem;
 }
 
 .address1 {
@@ -235,7 +238,7 @@ body {
   }
 
   .footer__content__wrapper {
-    padding: 2rem 7.5rem;
+    padding: 15rem 7.5rem 3rem;
   }
 }
 .nav {
@@ -465,21 +468,6 @@ body {
   position: relative;
   z-index: 2;
   max-width: 73.75rem;
-  /*
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: url("../../images/bg-quotes.png");
-    background-repeat: no-repeat;
-    filter: invert(10%) sepia(150%) saturate(300%) hue-rotate(83deg)
-      brightness(102%) contrast(102%);
-    top: -3rem;
-    left: 1.5rem;
-    width: 5rem;
-    height: 5rem;
-    transform: scale(0.25);   
-  }
-  */
 }
 
 .comments__section {
@@ -558,10 +546,23 @@ body {
   }
 }
 @media screen and (min-width: 1080px) {
+  .commentary {
+    margin: 8rem auto 0;
+  }
+
+  .comments {
+    padding: 1.8rem 2rem;
+  }
   .comments:first-child::before {
     transform: scale(0.45);
   }
 }
+.aside {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -14rem;
+}
+
 .get__access {
   padding: 2.5rem 1.75rem;
   margin: auto;
@@ -613,7 +614,7 @@ body {
     align-items: center;
     gap: 2rem;
     max-width: 44rem;
-    margin: auto;
+    margin: 2rem auto;
   }
 
   .register__email {
@@ -622,12 +623,17 @@ body {
 
   .signup__content {
     max-width: 42rem;
-    margin: auto;
+    margin: 2rem auto;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1180px) {
   .signup__section {
     margin: 7rem 18rem;
+  }
+
+  .aside {
+    margin-bottom: -16.5rem;
+    margin-top: 15rem;
   }
 }
 

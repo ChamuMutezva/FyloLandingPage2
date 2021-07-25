@@ -1,9 +1,12 @@
 @use '../abstracts';
 .footer {
   background-color: abstracts.$greenish-grey;
+  position: relative;
+ // top: 18rem;
+  z-index: 1;
 }
 .footer__content__wrapper {
-  padding: 2rem 1.75rem;
+  padding: 16rem 1.75rem 2rem;
 }
 .address1 {
   display: flex;
@@ -103,6 +106,6 @@
     grid-area: 1/5/2/6;
   }
   .footer__content__wrapper {
-    padding: 2rem 7.5rem;
+    padding: 15rem 7.5rem 3rem;
   }
 }

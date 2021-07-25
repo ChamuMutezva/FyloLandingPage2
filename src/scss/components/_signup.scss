@@ -1,5 +1,11 @@
 @use '../abstracts';
 
+.aside {
+  position: relative;
+  z-index: 2;
+ margin-bottom: -14rem;
+}
+
 .get__access {
   padding: 2.5rem 1.75rem;
   margin: auto;
@@ -41,24 +47,28 @@
   .get__started--btn {
     margin-top: 0;
   }
-  .registration {   
+  .registration {
     display: flex;
     align-items: center;
     gap: 2rem;
     max-width: 44rem;
-    margin: auto;
+    margin: 2rem auto;
   }
   .register__email {
-   flex: 1 1 40%;
+    flex: 1 1 40%;
   }
   .signup__content {
     max-width: 42rem;
-    margin: auto;
+    margin: 2rem auto;
   }
 }
 
-@media screen and(min-width: 1080px) {
+@media screen and(min-width: 1180px) {
   .signup__section {
     margin: 7rem 18rem;
+  }
+  .aside {    
+    margin-bottom: -16.5rem;
+    margin-top: 15rem;
   }
 }

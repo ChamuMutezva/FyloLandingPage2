@@ -68,6 +68,13 @@
 .fa {
   color: abstracts.$white;
   text-decoration: none;
+  outline: none;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: dashed currentColor;
+    outline-offset: 0.35em;
+  }
 }
 
 .socials {

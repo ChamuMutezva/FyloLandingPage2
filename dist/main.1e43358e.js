@@ -117,79 +117,59 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"src/main.js":[function(require,module,exports) {
+console.log("main.js");
+var form = document.querySelector(".registration");
+var email = document.querySelector(".register__email");
+var errorText = document.querySelector(".error__msg");
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
+var isEmail = function isEmail(email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email.toLowerCase());
+};
+
+var emailValidation = function emailValidation() {
+  if (email.value.trim() === '') {
+    errorText.classList.add("error__none");
+    return false;
   }
 
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
+  if (!isEmail(email.value.trim())) {
+    errorText.classList.add("error__none");
+    errorText.innerHTML = 'Looks like this is not an email';
+    return false;
   }
 
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
+  if (isEmail(email.value)) {
+    errorText.classList.add("correct__format");
+    errorText.innerHTML = "".concat(email.value, " is valid");
+    return true;
   }
 
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
+  return false;
+};
 
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
+var eventHandler = function eventHandler(target, handler) {
+  target.addEventListener('input', function () {
+    errorText.classList.remove("error__none");
+    errorText.classList.remove("correct__format");
+    handler();
+  });
+};
 
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/scss/main.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\..\\images\\bg-curvy-mobile.svg":[["bg-curvy-mobile.3eef75f6.svg","images/bg-curvy-mobile.svg"],"images/bg-curvy-mobile.svg"],"./..\\..\\images\\bg-curvy-desktop.svg":[["bg-curvy-desktop.b3534639.svg","images/bg-curvy-desktop.svg"],"images/bg-curvy-desktop.svg"],"./..\\..\\images\\bg-quotes.png":[["bg-quotes.2a98a720.png","images/bg-quotes.png"],"images/bg-quotes.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+eventHandler(email, emailValidation);
+form.addEventListener("submit", function (evt) {
+  errorText.classList.remove("error__none");
+  errorText.classList.remove("correct__format");
+  evt.preventDefault();
+  console.log(evt.target);
+  emailValidation();
+  /*
+  if(emailValidation){
+      alert(emailValidation())
+  }*/
+});
+},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -393,5 +373,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/main.d9ee62f6.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/main.js"], null)
+//# sourceMappingURL=/main.1e43358e.js.map

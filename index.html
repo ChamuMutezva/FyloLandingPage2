@@ -27,7 +27,7 @@
     <!--<link rel="stylesheet" href="./styles.css"> -->
 
     <link rel="stylesheet" href="./src/scss/main.scss" />
-    <link rel="stylesheet" href="./src/css/main.css" /> 
+    <link rel="stylesheet" href="./src/css/main.css" />
   </head>
 
   <body>
@@ -216,13 +216,17 @@
               would be happy to help you.
             </p>
             <form class="registration">
-              <label class="sr__only" for="email">enter email address </label>
-              <input
-                class="register__email"
-                id="email"
-                type="email"
-                placeholder="email.example.com"
-              />
+              <div class="email__wrapper">
+                <label class="sr__only" for="email">enter email address </label>
+                <input
+                  class="register__email"
+                  id="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="email.example.com"
+                />
+                <p class="error__msg">Error, please check your email</p>
+              </div>
               <button class="cta--btn get__started--btn">
                 Get Started For Free
               </button>
@@ -328,5 +332,6 @@
         </div>
       </footer>
     </div>
+    <script src="./src/main.js"></script>
   </body>
 </html>

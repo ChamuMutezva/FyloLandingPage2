@@ -18,6 +18,13 @@
   color: abstracts.$white;
   text-decoration: none;
   font-size: abstracts.calculateRem(12);
+  outline: none;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: dashed currentColor;
+    outline-offset: 0.25em;
+  }
 }
 
 @media screen and(min-width: 680px) {

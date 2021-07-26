@@ -122,6 +122,13 @@ console.log("main.js");
 var form = document.querySelector(".registration");
 var email = document.querySelector(".register__email");
 var errorText = document.querySelector(".error__msg");
+var tl = gsap.timeline();
+tl.from(".nav, .files, .hero, .comments, .productive, .aside", {
+  duration: 1,
+  opacity: 0,
+  y: 150,
+  stagger: 0.5
+});
 
 var isEmail = function isEmail(email) {
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -197,7 +204,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61813" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59793" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

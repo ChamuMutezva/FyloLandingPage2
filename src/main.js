@@ -3,6 +3,8 @@ const form = document.querySelector(".registration")
 const email = document.querySelector(".register__email")
 const errorText = document.querySelector(".error__msg")
 
+const tl = gsap.timeline()
+tl.from(".nav, .files, .hero, .comments, .productive, .aside", {duration: 1, opacity: 0, y: 150, stagger: 0.5})
 const isEmail = function (email) {
     const re =
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/

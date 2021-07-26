@@ -20,10 +20,18 @@
 }
 .productive__btn {
   color: abstracts.$lime;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   margin-top: 1rem;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: dashed currentColor;
+    // outline: dashed lighten(abstracts.$white, 80%);
+    outline-offset: 0.25em;
+  }
 }
 
 .productive__img__wrapper {

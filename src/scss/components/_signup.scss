@@ -31,7 +31,7 @@
 .register__email {
   display: block;
   margin: auto;
-  font-size: abstracts.calculateRem(10);
+  font-size: abstracts.calculateRem(12);
   padding: 1rem 2rem;
   border-radius: 24px;
   border: none;
@@ -40,7 +40,7 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    outline: dashed currentColor;
+ //   outline: dashed currentColor;
     outline: dashed lighten(abstracts.$white, 80%);
     outline-offset: 0.25em;
   }
